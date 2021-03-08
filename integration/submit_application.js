@@ -1,4 +1,3 @@
-var container;
 describe('QA engineer application', () => {
     before(function () {
         cy.request({
@@ -29,6 +28,7 @@ describe('QA engineer application', () => {
             }).invoke('attr', 'href').as('ancor') // will not be used
         cy.wait(1000)
     })
+
     it('2. Go to site and apply', function () {
         cy.get(`a[class^='job-title']`).contains("QA/Test Engineer").should($a => {
             expect($a.attr('target'), 'target').to.equal('_blank')
@@ -36,6 +36,7 @@ describe('QA engineer application', () => {
         }).click()
         cy.get(`div[data-qa="btn-apply-bottom"] > a`).click();
     });
+
     it('3. Fill form and submit', function () {
         cy.intercept('POST', `**/apply`, (req) => {
             if (req.body) {
