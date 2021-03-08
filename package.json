@@ -1,0 +1,28 @@
+{
+  "name": "e2e-userlane",
+  "version": "1.0.0",
+  "description": "Task-assessment, given a website where user should visit a page, find required position and submit application. Check that application submitted. ",
+  "engines": {
+    "node": ">=10.x"
+  },
+  "scripts": {
+    "test:debug": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//RicPiccolo/UL.git"
+  },
+  "keywords": [
+    "test",
+    "career",
+    "cypress"
+  ],
+  "author": "Yahor Kazharnovich",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "~6.3.0",
+    "cypress-file-upload": "^5.0.2",
+    "http-server": "^0.12.3"
+  }
+}

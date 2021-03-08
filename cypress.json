@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://www.userlane.com/careers/",
+  "projectId": "2r9hah",
+  "chromeWebSecurity": false,
+  "fixturesFolder": "fixtures",
+  "integrationFolder": "integration",
+  "pluginsFile": "plugins/index.js",
+  "supportFile": "support/index.js",
+  "viewportHeight": 1080,
+  "viewportWidth": 1440,
+  "firefoxGcInterval": null,
+  "env": {
+  }
+}
